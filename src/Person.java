@@ -1,7 +1,13 @@
+/* Author: Geraldo Beiro
+* Date: Jul 10th, 2024.
+* Time: 01:54 AM
+*/
+
 public class Person {
-    private  String firstName;
-    private  String lastName;
-    private double height;
+
+    protected  String firstName;
+    protected  String lastName;
+    protected double height;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -16,7 +22,7 @@ public class Person {
         return lastName;
     }
 
-    private double getHeight(){
+    protected double getHeight(){
         return height;
     }
 
@@ -28,7 +34,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    private void setHeight(double height){
+    protected void setHeight(double height){
         this.height=height;
     }
 
